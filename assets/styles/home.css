@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-container {
+  background-color: #353535;
+  padding: 20px 150px 20px 150px;
+}
+
+.top-section {
+  background-color: #03091c;
+  height: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 115px;
+  height: 115px;
+  margin-right: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 60px 60px 60px 60px;
+}
+
+.header-title {
+  color: white;
+  font-size: 50px;
+}
+
+nav {
+  background-color: #03091c;
+  padding: 20px 150px 20px 150px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500px;
+}
+
+nav ul li a:hover {
+  color: #b2db5b;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px 150px 20px 150px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home-featured-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+div article h1 a:link {
+  color: black;
+  text-decoration: none;
+}
+
+div article h1 a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+div article h1 a:hover {
+  text-decoration: underline;
+}
+
+.side-images {
+  width: 275px;
+  height: 154px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.more-articles {
+  margin: 10px;
+}
+
+aside article h5 a:link {
+  color: black;
+  text-decoration: none;
+}
+
+aside article h5 a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+aside article h5 a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  margin-top: 50px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Responsive design for screen width under 500px */
+@media only screen and (max-width: 500px) {
+  .header-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .header-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .logo-container {
+    flex-direction: column;
+  }
+
+  nav {
+    background-color: #03091c;
+    padding: 20px 100px 20px 100px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+    list-style-type: none;
+  }
+}
+
+/* Responsive design for screen width under 768px */
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  .header-title {
+    font-size: 32px;
+  }
+
+  .side-images {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-featured-image {
+    width: 100%;
+    height: auto;
+  }
+}
